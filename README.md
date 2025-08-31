@@ -1,3 +1,4 @@
+
 # Hi, I'm Letian
 CS student @ NUS. Researching Trustworthy, Robust ML.
 
@@ -18,4 +19,4 @@ I am also interested in:
 - Paper Title (2025). [PDF](paper.pdf) · [Code](https://github.com/FisherSkyi/paper-code) -->
 
 ## Contact
-📧 [yuletian (at) nus (dot) edu (dot) sg](yuletian@u.nus.edu)
+📧 [yuletian@nus.edu.sg](yuletian@u.nus.edu)
