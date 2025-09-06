@@ -1,3 +1,17 @@
 title: FisherSkyi
 description: CS @ NUS · Research Portfolio
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
+baseurl: ""
+url: "https://fisherskyi.github.io"
+permalink: pretty
+nav: 
+  - title: Home
+    url: /
+  - title: About
+    url: /about/  
+  - title: Research
+    url: /research/
+  - title: Projects
+    url: /projects/
+  - title: Blog
+    url: /blog/
