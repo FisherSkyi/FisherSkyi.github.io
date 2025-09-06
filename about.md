@@ -14,4 +14,4 @@ I am also interested in:
 - Software Engineering
 
 ## Contact
-📧 [yuletian@nus.edu.sg](Yuletian@u.nus.edu)
+📧 [yuletian@nus.edu.sg](yuletian (at) u (dot) nus (dot) edu)
