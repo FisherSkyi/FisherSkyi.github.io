@@ -13,7 +13,7 @@ TechJam 2025 @ TikTok
 
 Hack & Roll 2025 @ NUS Hackers
 
-### [Seb: a Task Tracking Bot](https://github.com/FisherSkyi/ip)
+### [Seb: a Task Tracking Bot](https://fisherskyi.github.io/ip/)
 
 Independent Project (still in developing, currently has GUI) for CS2103T Software Engineering.
 
