@@ -4,7 +4,7 @@ title: Research
 ---
 # Research
 
-### [Adversarial Robustness in One-stage Learning-to-Defer](https://github.com/yannismontreuil/adversarial_one_stage) (not published yet)
+### [Adversarially Robust Learning-to-Defer for Classification and Regression](https://github.com/yannismontreuil/adversarial_one_stage) (not published yet)
 Extend the robustness framework of [Montreuil et al. (2025a)](https://arxiv.org/abs/2410.15729) to one-stage scenario, where considering the interaction between learning the predictor and adapting the experts.
 
 Collaborator & Supervisor: [Yannis Montreuil](mailto:yannis.montreuil@u.nus.edu)
