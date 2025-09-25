@@ -25,6 +25,7 @@ Beside Machine Learning, I am also interested in:
   <a href="mailto:yuletian@nus.edu.sg"><i class="fas fa-envelope"></i></a>
   <a href="https://github.com/FisherSkyi" target="_blank"><i class="fab fa-github"></i></a>
   <a href="https://www.linkedin.com/in/letian-yu/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://scholar.google.com/citations?user=nFFolY0AAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
 </div>
 
   </div>

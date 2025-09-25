@@ -4,7 +4,7 @@ title: Teaching
 ---
 # Teaching
 
-### CS1101S Programming Methodology
+### CS1101S Programming Methodology I
 
 Year: AY25/26, Semester 1
 
