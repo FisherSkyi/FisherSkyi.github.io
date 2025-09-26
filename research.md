@@ -4,10 +4,10 @@ title: Research
 ---
 # Research
 
-<!-- ### [Adversarially Robust Learning-to-Defer for Classification and Regression](https://github.com/yannismontreuil/adversarial_one_stage) (not published yet)
+### Adversarially Robust Learning-to-Defer for Classification and Regression
 Extend the robustness framework of [Montreuil et al. (2025a)](https://arxiv.org/abs/2410.15729) to one-stage scenario, where considering the interaction between learning the predictor and adapting the experts.
 
-Collaborator & Supervisor: [Yannis Montreuil](mailto:yannis.montreuil@u.nus.edu) -->
+Collaborator & Supervisor: [Yannis Montreuil](mailto:yannis.montreuil@u.nus.edu)
 
 ### [Road Sign Classification with Denoising Pipeline Approach](https://github.com/FisherSkyi/classify_denoise_SwinIR). 
 
@@ -19,4 +19,4 @@ Supervisor: Professor [David Woodruff](mailto:dwoodruf@andrew.cmu.edu)
 
 ## Publications
 
-One-stage robust L2D targetted @ AISTATS 2026
+<!-- One-stage robust L2D targetted @ AISTATS 2026 -->
