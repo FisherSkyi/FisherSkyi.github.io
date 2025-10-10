@@ -14,10 +14,10 @@ Hi, I'm Letian Yu
 Sophomore CS student @ NUS  
 Researching Trustworthy, Robust ML
 
-Beside Machine Learning, I am also interested in:
+Besides Machine Learning, I am also interested in:
 
 - Software Engineering
-- Robot, especially Adaptive Robot
+- Robotics, especially Adaptive Robotics
 - Computer Organization and OS
 - Programming Language
 

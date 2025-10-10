@@ -6,9 +6,9 @@ title: Blog
 
 ## Categories
 
-- [📊 Math]({{ "/blog/math/" | relative_url }}) - Mathematical insights and theory
+- [♠️ Math]({{ "/blog/math/" | relative_url }}) - Mathematical insights and theory
 - [📢 Updates]({{ "/blog/update/" | relative_url }}) - Research progress and announcements  
-- [🌍 Locations]({{ "/blog/location/" | relative_url }}) - Travel, conferences, and academic meetings
+- [🌏 Locations]({{ "/blog/location/" | relative_url }}) - Travel, conferences, and academic meetings
 
 ### Updates:
 
