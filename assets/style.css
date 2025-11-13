@@ -1,128 +1,220 @@
-/* A more modern, clean design */
+/* ...existing code... */
 
-/* Google Font */
-body {
-  font-family: 'Lato', sans-serif;
+/* Modern, responsive site stylesheet - full replacement */
+
+/* Variables */
+:root{
+  --primary: #2b6cb0;        /* blue accent */
+  --accent: #6B8E23;         /* secondary accent kept for compatibility */
+  --bg: #f5f7f8;
+  --card: #ffffff;
+  --text: #202427;
+  --muted: #6c757d;
+  --nav-bg: #2f3640;
+  --nav-text: #ffffff;
+  --radius: 10px;
+  --container-max: 1000px;
 }
 
-:root {
-  --primary-color: #6B8E23;
-  --text-color: #212529;
-  --background-color: #f8f9fa;
-  --nav-background: #6B8E23;
-  --nav-text-color: #f8f9fa;
-  --footer-text-color: #6c757d;
-  --container-bg: #ffffff;
-  --hov-nav-text-color: #7CFC00;
+/* Reset / base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding-top:0; /* adjust if nav is fixed */
 }
 
-/* Reset and base styles */
-body {
-  margin: 0;
-  line-height: 1.6;
-  background: var(--background-color);
-  color: var(--text-color);
+/* NAV */
+nav{
+  background:var(--nav-bg);
+  color:var(--nav-text);
+  padding:0.9rem 1.25rem;
+  text-align:center;
+  box-shadow:0 2px 6px rgba(0,0,0,0.08);
+  position:relative;
+  z-index:10;
+}
+nav a{
+  color:var(--nav-text);
+  text-decoration:none;
+  margin:0 0.9rem;
+  font-weight:700;
+  font-size:1rem;
+  transition:color .18s ease; 
+}
+nav a:hover{ 
+  color:var(--primary); 
+  text-decoration:none; 
 }
 
-/* Navigation bar */
-nav {
-  background: var(--nav-background);
-  padding: 1rem 1.5rem;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-nav a {
-  color: var(--nav-text-color);
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: 700;
-  font-size: 1.1rem;
-  transition: color 0.2s ease-in-out;
-}
-
-nav a:hover {
-  color: var(--hov-nav-text-color);
-  text-decoration: none; 
-}
-
-/* Main content container */
-main.container {
-  max-width: 800px;
-  margin: 3em auto;
-  padding: 2em;
-  background: var(--container-bg);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+/* MAIN container (page card) */
+main.container{
+  max-width:var(--container-max);
+  margin:2.25rem auto;
+  padding:2rem;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:0 8px 28px rgba(16,24,40,0.06);
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text-color);
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
+h1{ font-size:2.25rem; margin:0 0 0.5rem 0; }
+h2{ font-size:1.45rem; margin:0 0 0.5rem 0; }
+h3{ font-size:1.1rem; margin:0 0 0.5rem 0; font-weight:700; }
 
 /* Links */
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
+a{ color:var(--primary); }
+a:hover{ text-decoration:underline; }
 
 /* Footer */
-footer {
-  text-align: center;
-  margin: 3em 0;
-  font-size: 0.9em;
-  color: var(--footer-text-color);
+footer{
+  text-align:center;
+  color:var(--muted);
+  font-size:0.9rem;
+  margin:2.5rem 0 4rem 0;
 }
 
-/* Profile Section Layout */
-.profile-section {
-  display: flex;
-  align-items: center;
-  gap: 1em; /* Reduced from 2em to 1em */
-  flex-direction: row-reverse;
+/* Utilities to prevent overflow from long words and allow truncation */
+*,
+*::before,*::after{ box-sizing:border-box; }
+p, li, h1,h2,h3,h4,h5,h6, .profile-text, .side-text {
+  overflow-wrap:anywhere;
+  word-break:break-word;
+  hyphens:auto;
+  min-width:0; /* allow flex children to shrink */
 }
 
-.profile-image {
-  flex-shrink: 0;
+/* Single-line truncation utility */
+.truncate{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 
-.profile-text {
-  flex-grow: 1;
+/* SOCIAL ICONS */
+.social-icons{ 
+  margin-top:0.65rem; 
+  display:flex; 
+  gap:0.8rem; 
+  align-items:center; 
+}
+.social-icons a{ 
+  color:var(--text); 
+  font-size:2rem; 
+  transition:color .18s ease; 
+}
+.social-icons a:hover{ 
+  color:var(--primary); 
 }
 
-/* Profile Picture */
-.profile-picture {
-  display: block;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+/* PROFILE SECTION (text left, image right) */
+.profile-section{
+  display:flex;
+  gap:1rem;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-direction:row-reverse; /* image on right by default */
+  margin-bottom:1rem;
+  background:transparent; /* no nested card */
+  padding:0;
 }
 
-/* Social Icons */
-.social-icons {
-  margin-top: 1em;
+/* image container: take up a percentage but allow responsive resizing */
+.profile-image{
+  flex:0 0 36%;       /* adjust percentage to change image column width */
+  max-width:36%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-.social-icons a {
-  color: var(--text-color);
-  margin-right: 1em;
-  font-size: 1.5rem;
-  transition: color 0.2s ease-in-out;
+/* image should fill the image column's width and preserve aspect ratio */
+.profile-image img,
+.side-image img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:cover;
+  border-radius:8px;
+  box-shadow:none;
 }
 
-.social-icons a:hover {
-  color: var(--primary-color);
+/* text column: grow, but allow shrinking and wrapping */
+.profile-text{
+  flex:1 1 0%;
+  min-width:0;
 }
+
+/* If you want a circular avatar in other contexts (e.g., header), use this */
+.profile-picture{
+  width:clamp(90px,18vw,180px);
+  height:auto;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+}
+
+/* SIDE-BY-SIDE component (general) - text left, image right, no card */
+.side-by-side{
+  display:flex;
+  gap:1rem;
+  align-items:flex-start;
+  margin:1.25rem 0;
+  flex-direction:row-reverse; /* image on right */
+  background:transparent;
+  padding:0;
+  border-radius:0;
+  box-shadow:none;
+}
+.side-image{
+  flex:0 0 38%;
+  max-width:38%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.side-text{
+  flex:1 1 0%;
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+
+/* RESPONSIVE: stack on small screens, image full-width and above text */
+@media (max-width: 880px){
+  main.container{ padding:1.25rem; margin:1.4rem auto; }
+  .profile-section,
+  .side-by-side{ flex-direction:column; gap:0.75rem; align-items:center; }
+  .profile-image,
+  .side-image{ flex:none; max-width:100%; width:100%; }
+  .profile-text, .side-text{ text-align:left; width:100%; }
+  .profile-picture{ width:clamp(90px,30vw,150px); border-radius:12px; }
+}
+
+/* Mobile small */
+@media (max-width: 480px){
+  body{ font-size:15px; }
+  nav a{ font-size:0.95rem; margin:0 0.6rem; }
+  h1{ font-size:1.6rem; }
+  .profile-picture{ width:clamp(74px,34vw,120px); }
+}
+
+/* Card-like helper (optional) */
+.card{
+  background:var(--card);
+  border-radius:10px;
+  padding:1rem;
+  box-shadow:0 6px 20px rgba(16,24,40,0.04);
+}
+
+/* small helpers */
+.kicker{ font-size:0.9rem; color:var(--muted); margin-bottom:0.25rem; }
+.meta{ font-size:0.9rem; color:var(--muted); }
+
+/* END of file */
+/* ...existing code... */

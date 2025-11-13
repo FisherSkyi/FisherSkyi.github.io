@@ -5,20 +5,18 @@ title: Home
 
 <div class="profile-section">
   <div class="profile-image">
-    <img src="{{ "/assets/images/profile.jpg" | relative_url }}" alt="Letian" class="profile-picture">
+    <img src="{{ "/assets/images/profile.png" | relative_url }}" alt="Letian" class="profile-picture">
   </div>
   <div class="profile-text" markdown="1">
 # About Me
 
 Hi, I'm Letian Yu  
-Sophomore CS student @ NUS  
-Researching Trustworthy, Robust ML
+Sophomore CS student @ NUS 
 
-Besides Machine Learning, I am also interested in:
-
+My research interests include: 
 - Learning Theory
-- Time Series Analysis
 - Computer Vision
+- Time Series Analysis (I'm working on a project about this recently)
 
 <div class="social-icons">
   <a href="mailto:yuletian@nus.edu.sg"><i class="fas fa-envelope"></i></a>
