@@ -16,10 +16,9 @@ Researching Trustworthy, Robust ML
 
 Besides Machine Learning, I am also interested in:
 
-- Software Engineering
-- Robotics, especially Adaptive Robotics
-- Computer Organization and OS
-- Programming Language
+- Learning Theory
+- Time Series Analysis
+- Computer Vision
 
 <div class="social-icons">
   <a href="mailto:yuletian@nus.edu.sg"><i class="fas fa-envelope"></i></a>
