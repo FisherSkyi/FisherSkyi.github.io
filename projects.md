@@ -19,19 +19,6 @@ title: Projects
 
 <div class="side-by-side right">
   <div class="side-image">
-    <img src="{{ "/assets/images/TikTok_logo.svg" | relative_url }}" alt="No image available">
-  </div>
-  <div class="side-text">
-    <div class="markdown-body">
-    <h2>Filtering the Noise: ML for Trustworthy Location Reviews</h2>
-    Submission to TikTok TechJam 2025 @ Singapore <br>
-    The project repo can be found <a href="https://github.com/FisherSkyi/Trustworthy-Location-Review">Here</a> <br>
-    </div>
-  </div>
-</div>
-
-<div class="side-by-side right">
-  <div class="side-image">
     <img src="{{ "/assets/images/ipUi.png" | relative_url }}" alt="No image available">
   </div>
   <div class="side-text">
