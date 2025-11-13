@@ -2,22 +2,47 @@
 layout: default
 title: Projects
 ---
-# Projects
+<div class="side-by-side right">
+  <div class="side-image">
+    <img src="{{ "/assets/images/tp_Ui.png" | relative_url }}" alt="Road sign example">
+  </div>
+  <div class="side-text">
+    <div class="markdown-body">
+    <h2>SoCTAssist: A Helper Tool for UG TA</h2>
+    Developed as part of a team project for CS2103T Software Engineering at NUS. This tool is designed to assist undergraduate teaching assistants in managing their tasks efficiently. It features a user-friendly interface, task tracking, and scheduling functionalities to streamline the TA experience. <br>
+    The project repo can be found <a href="https://github.com/AY2526S1-CS2103T-W11-1/tp">Here</a> <br>
+    The Product Can Be Downloaded from <a href="https://github.com/AY2526S1-CS2103T-W11-1/tp/releases/tag/v1.6.0">Here</a> <br>
+    The Product Demo Video Can Be Watched from <a href="https://drive.google.com/drive/folders/1JauFIqsVzKY7tJB08Lwgr3ywWtv8utHU">Here</a>
+    </div>
+  </div>
+</div>
 
-### [SoCTAssist: A Helper Tool for UG TA](https://github.com/AY2526S1-CS2103T-W11-1/tp)
+<div class="side-by-side right">
+  <div class="side-image">
+    <img src="{{ "/assets/images/TikTok_logo.svg" | relative_url }}" alt="No image available">
+  </div>
+  <div class="side-text">
+    <div class="markdown-body">
+    <h2>Filtering the Noise: ML for Trustworthy Location Reviews</h2>
+    Submission to TikTok TechJam 2025 @ Singapore <br>
+    The project repo can be found <a href="https://github.com/FisherSkyi/Trustworthy-Location-Review">Here</a> <br>
+    </div>
+  </div>
+</div>
 
-The Product Can Be Downloaded from [Here](https://github.com/AY2526S1-CS2103T-W11-1/tp/releases/tag/v1.6.0)
-The Product Demo Video Can Be Watched from [Here](https://drive.google.com/drive/folders/1JauFIqsVzKY7tJB08Lwgr3ywWtv8utHU)
+<div class="side-by-side right">
+  <div class="side-image">
+    <img src="{{ "/assets/images/ipUi.png" | relative_url }}" alt="No image available">
+  </div>
+  <div class="side-text">
+    <div class="markdown-body">
+    <h2>Seb: a Task Tracking Bot</h2>
+    Independent Project for CS2103T Software Engineering. <br>
+    The project repo can be found <a href="https://fisherskyi.github.io/ip/">Here</a> <br>
+    </div>
+  </div>
+</div>
 
-### [Filtering the Noise: ML for Trustworthy Location Reviews](https://github.com/FisherSkyi/Trustworthy-Location-Review)
 
-TechJam 2025 @ TikTok 
 
-### [diNUS](https://github.com/Junronggg/diNUS)
-
-Hack & Roll 2025 @ NUS Hackers
-
-### [Seb: a Task Tracking Bot](https://fisherskyi.github.io/ip/)
-
-Independent Project (still in developing, currently has GUI) for CS2103T Software Engineering.
 

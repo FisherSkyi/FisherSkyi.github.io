@@ -2,41 +2,36 @@
 layout: default
 title: Research
 ---
-## Adversarially Robust Learning-to-Defer for Classification and Regression
-Extend the robustness framework of [Montreuil et al. (2025a)](https://arxiv.org/abs/2410.15729) to one-stage scenario, where considering the interaction between learning the predictor and adapting the experts.
+<div class="side-by-side right">
+  <div class="side-image">
+    <img src="{{ "/assets/images/One Stage Model.png" | relative_url }}" alt="Road sign example">
+  </div>
+  <div class="side-text">
+    <h2>Adversarially Robust Learning-to-Defer for Classification and Regression</h2>
+    Extend the robustness framework of <a href="https://arxiv.org/abs/2410.15729">Montreuil et al. (2025a)</a> 
+    to one-stage scenario, where considering the interaction between learning the predictor and adapting the experts. <br>
+    <b>Code Base:</b> <a href="https://github.com/yannismontreuil/adversarial_one_stage">Currently Not Public</a> <br>
+    <b>Collaborator & Supervisor:</b> <a href="https://yannismontreuil.github.io/">Yannis Montreuil</a> <br>
+    <b>arXiv Preprint:</b> <a href="https://arxiv.org/abs/2510.10988">https://arxiv.org/abs/2510.10988</a>
+  </div>
+</div>
 
-arXiv Preprint: [https://arxiv.org/abs/2510.10988](https://arxiv.org/abs/2510.10988)
-
-Collaborator & Supervisor: [Yannis Montreuil](https://yannismontreuil.github.io/)
-
-## Road Sign Classification with Denoising Pipeline Approach
-
-[Code Here](https://github.com/FisherSkyi/classify_denoise_SwinIR). 
-
-Real-world images are affected by image noise, which degrades the quality 
-and reduces reliability of traffic sign recognition. This research proposes 
-a denoiser-classifier pipeline approach, which uses a pre-trained color 
-image denoiser, and compares it against an end-to-end approach. We 
-evaluated CNN and ResNet-18 on GTSRB under Gaussian noise.
-{% capture md %}
-Collaborators: 
-[Yuqi Sun](mailto:yuqisun@umich.edu), 
-[Jiaqi Zhang](mailto:jiaqi.zhang3@mail.mcgill.ca), 
-[Huayu Liu](mailto:huayul3@uci.edu), 
-[Zhuoyang Hu](mailto:zh315@sussex.ac.uk)  
-Supervisor: 
-Professor [David Woodruff](mailto:dwoodruf@andrew.cmu.edu)
-
-<!-- <div class="side-by-side right">
+<div class="side-by-side right">
   <div class="side-image">
     <img src="{{ "/assets/images/swinir_denoise.png" | relative_url }}" alt="Road sign example">
   </div>
-  <div class="side-text" markdown="1">
-
-    {% endcapture %}
-    {{ md | markdownify }}
+  <div class="side-text">
+    <h2>Road Sign Classification with Denoising Pipeline Approach</h2>
+    Real-world images are affected by image noise, which degrades the quality 
+    and reduces reliability of traffic sign recognition. This research proposes 
+    a denoiser-classifier pipeline approach, which uses a pre-trained color 
+    image denoiser, and compares it against an end-to-end approach. We 
+    evaluated CNN and ResNet-18 on GTSRB under Gaussian noise. <br>
+  <b>Code Base:</b> <a href="https://github.com/FisherSkyi/classify_denoise_SwinIR">classify_denoise_SwinIR</a>.  <br>
+  <b>Collaborators:</b> <a href="https://www.linkedin.com/in/yuqi-sun-11b709270/?originalSubdomain=hk">Yuqi Sun</a>, <a href="mailto:jiaqi.zhang3@mail.mcgill.ca">Jiaqi Zhang</a>, <a href="mailto:huayul3@uci.edu">Huayu Liu</a>, <a href="mailto:zh315@sussex.ac.uk">Zhuoyang Hu</a> <br>
+  <b>Supervisor:</b> <a href="mailto:dwoodruf@andrew.cmu.edu">Professor David Woodruff</a>
   </div>
-</div> -->
+</div>
 
 
 

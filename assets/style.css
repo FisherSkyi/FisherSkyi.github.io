@@ -192,7 +192,8 @@ p, li, h1,h2,h3,h4,h5,h6, .profile-text, .side-text {
   .side-by-side{ flex-direction:column; gap:0.75rem; align-items:center; }
   .profile-image,
   .side-image{ flex:none; max-width:100%; width:100%; }
-  .profile-text, .side-text{ text-align:left; width:100%; }
+  .profile-text, 
+  .side-text{ text-align:left; width:100%; }
   .profile-picture{ width:clamp(90px,30vw,150px); border-radius:12px; }
 }
 
@@ -217,4 +218,3 @@ p, li, h1,h2,h3,h4,h5,h6, .profile-text, .side-text {
 .meta{ font-size:0.9rem; color:var(--muted); }
 
 /* END of file */
-/* ...existing code... */
