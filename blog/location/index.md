@@ -7,17 +7,10 @@ categories: [location]
 
 # Locations & Travel
 
-Follow my academic journey around the world:
-
-- Conference presentations and attendance
-- Research visits and collaborations
-- Academic meetings and workshops
-- Travel experiences and insights
+- Jane Street, Hong Kong SAR 🇭🇰 (2025) 
+    - Selected to attend a series of meetings and workshops at the Jane Street office in Hong Kong. See [SEE Program](https://www.janestreet.com/join-jane-street/programs-and-events/see/) for more details.
+    - Explored the city's vibrant culture and cuisine.
 
 ## Upcoming Events
-
-Coming soon...
-
-## Past Events
 
 Coming soon...
