@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Mathematical Insights
 date: 2025-09-25
 categories: [math]
 ---

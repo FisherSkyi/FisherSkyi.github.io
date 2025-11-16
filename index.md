@@ -5,7 +5,7 @@ title: Home
 
 <div class="profile-section">
   <div class="profile-image">
-    <img src="{{ "/assets/images/profile.png" | relative_url }}" alt="Letian" class="profile-picture">
+    <img src="{{ "/assets/images/profile.webp" | relative_url }}" alt="Letian" class="profile-picture">
   </div>
   <div class="profile-text" markdown="1">
 # About Me
