@@ -17,3 +17,5 @@ Stay updated with my latest:
 ## Recent Updates
 
 - 2025-09-24: Our paper on "Road Sign Classification with Denoising Pipeline Approach" has been accepted by ICoIAS' 2025!
+
+[Go Back to Blog Main Page](../../index.md)

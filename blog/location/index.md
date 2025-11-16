@@ -11,6 +11,4 @@ categories: [location]
     - Selected to attend a series of meetings and workshops at the Jane Street office in Hong Kong. See [SEE Program](https://www.janestreet.com/join-jane-street/programs-and-events/see/) for more details.
     - Explored the city's vibrant culture and cuisine.
 
-## Upcoming Events
-
-Coming soon...
+[Go Back to Blog Main Page](../../index.md)

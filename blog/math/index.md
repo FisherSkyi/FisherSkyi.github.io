@@ -19,3 +19,5 @@ Welcome to my mathematical blog section. Here I'll share:
 - [AR(1) Process and properties](../../assets/files/TSA4__Problem_3_2-1.pdf) - A brief overview of the AR(1) process and its key properties.
 
 - [SVM Interpretation](./svm.md)
+
+[Go Back to Blog Main Page](../../index.md)

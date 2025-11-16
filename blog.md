@@ -2,8 +2,6 @@
 layout: default
 title: Blog
 ---
-# Blog
-
 ## Categories
 
 - [♠️ Math]({{ "/blog/math/" | relative_url }}) - Mathematical insights and theory
