@@ -12,3 +12,12 @@ Year: AY25/26, Semester 1
     <li>The topics covered SICP JS.</li>
 </ul>
 
+<h2>CS2030S Programming Methodology II - Teaching Assistant</h2>
+
+Year: AY25/26, Semester 2
+
+<ul>
+    <li>Selected as a Teaching Assistant, preparing lab materials (quiz, slides, etc) for upcoming semester.</li>
+    <li>Topic covered: Object-Oriented Programming in Java.</li>
+</ul>
+
