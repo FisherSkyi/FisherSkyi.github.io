@@ -11,7 +11,8 @@ title: Home
 # About Me
 
 Hi, I'm Letian Yu  
-Sophomore CS student @ NUS 
+Sophomore CS student @ NUS
+Incoming Exchange Student @ ETH Zurich (Spring 2027)
 
 My research interests include: 
 - Learning Theory
