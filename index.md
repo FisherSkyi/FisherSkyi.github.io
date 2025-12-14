@@ -8,11 +8,14 @@ title: Home
     <img src="{{ "/assets/images/profile.webp" | relative_url }}" alt="Letian" class="profile-picture">
   </div>
   <div class="profile-text" markdown="1">
-# About Me
 
-Hi, I'm Letian Yu  
-Sophomore CS student @ NUS
-Incoming Exchange Student @ ETH Zurich (Spring 2027)
+<h1>About Me</h1>
+
+<tt>
+  Hi, I'm Letian Yu <br>
+  Sophomore CS student @ NUS <br>
+  Incoming Exchange Student @ ETH Zurich (Spring 2027) <br>
+</tt>
 
 My research interests include: 
 - Learning Theory
