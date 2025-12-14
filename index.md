@@ -17,10 +17,13 @@ title: Home
   Incoming Exchange Student @ ETH Zurich (Spring 2027) <br>
 </tt>
 
+<tt>
 My research interests include: 
-- Learning Theory
-- Computer Vision
-- Time Series Analysis (I'm working on a project about this recently)
+  <ul>
+    <li>Machine Learning</li>
+    <li>Time Series Analysis (I'm working on a project about this recently)</li>
+  </ul>
+</tt>
 
 <div class="social-icons">
   <a href="mailto:yuletian@nus.edu.sg"><i class="fas fa-envelope"></i></a>
