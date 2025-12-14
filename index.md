@@ -11,19 +11,19 @@ title: Home
 
 <h1>About Me</h1>
 
-<tt>
+<p style="font-family: monospace;">
   Hi, I'm Letian Yu <br>
   Sophomore CS student @ NUS <br>
   Incoming Exchange Student @ ETH Zurich (Spring 2027) <br>
-</tt>
+</p>
 
-<tt>
-My research interests include: 
-  <ul>
-    <li>Machine Learning</li>
-    <li>Time Series Analysis (I'm working on a project about this recently)</li>
-  </ul>
-</tt>
+<p style="font-family: monospace;">
+  My research interests include:
+</p>
+<ul style="font-family: monospace;">
+  <li>Machine Learning</li>
+  <li>Time Series Analysis (I'm working on a project about this recently)</li>
+</ul>
 
 <div class="social-icons">
   <a href="mailto:yuletian@nus.edu.sg"><i class="fas fa-envelope"></i></a>
