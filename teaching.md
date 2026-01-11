@@ -19,5 +19,6 @@ Year: AY25/26, Semester 2
 <ul>
     <li>Selected as a Teaching Assistant, preparing lab materials (quiz, slides, etc) for upcoming semester.</li>
     <li>Topic covered: Object-Oriented Programming in Java.</li>
+    <li><a href="https://drive.google.com/drive/folders/1CTWtafShCRms0Wjb1zpQcgYKuwnx74SS">Resources</a> (Not public available)</li>
 </ul>
 

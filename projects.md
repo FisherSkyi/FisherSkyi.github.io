@@ -2,6 +2,21 @@
 layout: default
 title: Projects
 ---
+
+<div class="side-by-side right">
+  <div class="side-image">
+    <img src="{{ "/assets/images/reposenselogo.png" | relative_url }}" alt="Road sign example">
+  </div>
+  <div class="side-text">
+    <div class="markdown-body">
+    <h2>Developer for RepoSense based on <a href="https://nus-cs3281.github.io/website/index.html">CS3281</a>, a OSS project of NUS Computing.<br>
+    The project is supervised by Prof. Damith C. Rajapakse<br>
+    The project website is <a href="https://reposense.org/">here</a></h2>
+    The project repo can be found <a href="https://github.com/reposense/RepoSense">Here</a> <br>
+    </div>
+  </div>
+</div>
+
 <div class="side-by-side right">
   <div class="side-image">
     <img src="{{ "/assets/images/tp_Ui.png" | relative_url }}" alt="Road sign example">

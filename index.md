@@ -14,12 +14,12 @@ title: Home
 <p style="font-family: monospace;">
   Hi, I'm Letian Yu <br>
   Sophomore CS student @ NUS <br>
-  Incoming Exchange Student @ ETH Zurich (Spring 2027) <br>
 </p>
 
 <p style="font-family: monospace;">
   My research interests include:
 </p>
+
 <ul style="font-family: monospace;">
   <li>Machine Learning</li>
   <li>Time Series Analysis (I'm working on a project about this recently)</li>
