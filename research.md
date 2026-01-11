@@ -4,6 +4,17 @@ title: Research
 ---
 <div class="side-by-side right">
   <div class="side-image">
+    <img src="{{ "/assets/images/h.png" | relative_url }}" alt="f-SLDS">
+  </div>
+  <div class="side-text">
+    <h2>L2D in Time Series</h2>
+    Extending the learning-to-defer (L2D) framework to time series data<br>
+    Inovating a novel architecture.<br>
+  </div>
+</div>
+
+<div class="side-by-side right">
+  <div class="side-image">
     <img src="{{ "/assets/images/One_stage_model.webp" | relative_url }}" alt="Road sign example">
   </div>
   <div class="side-text">
