@@ -10,7 +10,7 @@ title: Projects
   <div class="side-text">
     <div class="markdown-body">
     <h2>RepoSense: Visualize programmer activities across Git repositories</h2>
-    Developer for RepoSense based on <a href="https://nus-cs3281.github.io/website/index.html">CS3281</a>, a OSS project of NUS Computing.<br>
+    Developer for RepoSense based on <a href="https://nus-cs3281.github.io/2026/index.html">CS3281</a>, a OSS project of NUS Computing.<br>
     The project is supervised by Prof. Damith C. Rajapakse<br>
     The project website is <a href="https://reposense.org/">here</a><br>
     The project repo can be found <a href="https://github.com/reposense/RepoSense">Here</a> <br>
