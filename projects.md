@@ -47,5 +47,22 @@ title: Projects
 </div>
 
 
+<div class="side-by-side right">
+  <div class="side-image">
+    <img src="{{ "/assets/images/popop_Ui.png" | relative_url }}" alt="Road sign example">
+  </div>
+  <div class="side-text">
+    <div class="markdown-body">
+    <h2>pOpOp: a Chrome Extension <del>that might be useful</del></h2>
+    Develop a Chrome Extension as part of NUS Hack&Roll 2026. <br>
+    The project repo can be found <a href="https://github.com/wuliyq/pOpOp">Here</a> <br>
+    The project use media-pipe library to detect user's gesture allow user to control the browser without touching the mouse or keyboard. <br>
+    My RepoSense report can be found <a href="https://fisherskyi.github.io/publish-RepoSense/">here</a> <br>
+    </div>
+  </div>
+</div>
+    
+
+
 
 
