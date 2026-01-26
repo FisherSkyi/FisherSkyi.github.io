@@ -10,6 +10,8 @@ title: Blog
 
 ### Updates:
 
+- 2026-01-24: Excited to share that our paper on "Adversarially Robust Learning-to-Defer for Classification and Regression" has been accepted to AISTATS 2026! Looking forward to presenting our work at the conference.
+
 - 2025-10-17: The preprint of our work on "Adversarial Robustness in One-Stage Learning-to-Defer" is now available on arXiv: [https://arxiv.org/abs/2510.10988](https://arxiv.org/abs/2510.10988).
 
 <!-- - 2025-09-24: Our paper on "Road Sign Classification with Denoising Pipeline Approach" has been accepted by ICoIAS' 2025 (International Conference on Intelligent Autonomous Systems) at Osaka, Japan. More details will be updated soon. -->

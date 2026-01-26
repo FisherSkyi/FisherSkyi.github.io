@@ -18,7 +18,7 @@ title: Research
     <img src="{{ "/assets/images/One_stage_model.webp" | relative_url }}" alt="Road sign example">
   </div>
   <div class="side-text">
-    <h2>Adversarially Robust Learning-to-Defer for Classification and Regression</h2>
+    <h2>[AISTATS 2026] Adversarially Robust Learning-to-Defer for Classification and Regression</h2>
     Extend the robustness framework of <a href="https://arxiv.org/abs/2410.15729">Montreuil et al. (2025a)</a> 
     to one-stage scenario, where considering the interaction between learning the predictor and adapting the experts. <br>
     <b>Code Base:</b> <a href="https://github.com/yannismontreuil/adversarial_one_stage">Currently Not Public</a> <br>

@@ -5,7 +5,7 @@ title: Projects
 
 <div class="side-by-side right">
   <div class="side-image">
-    <img src="{{ "/assets/images/reposenselogo.png" | relative_url }}" alt="Road sign example">
+    <img src="{{ "/assets/images/reposenseOverview.png" | relative_url }}" alt="Road sign example">
   </div>
   <div class="side-text">
     <div class="markdown-body">
