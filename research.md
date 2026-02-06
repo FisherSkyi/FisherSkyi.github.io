@@ -10,9 +10,9 @@ title: Research
     <h2>L2D in Time Series</h2>
     Extending the learning-to-defer (L2D) framework to time series data<br>
     Inovating a novel architecture that hanlde bandit feedback from selected expert.<br>
-    <b>Code Base:</b> <a href="https://github.com/yannismontreuil/Time_Series_L2D"></a> <br>
+    <b>Code Base:</b> <a href="https://github.com/yannismontreuil/Time_Series_L2D">GitHub Repository</a> <br>
     <b>Collaborator & Supervisor:</b> <a href="https://yannismontreuil.github.io/">Yannis Montreuil [NUS & CNRS]</a> <br>
-    <b>arXiv Preprint:</b> <a href="https://arxiv.org/abs/2601.22538">https://arxiv.org/abs/2510.10988</a>
+    <b>arXiv Preprint:</b> <a href="https://arxiv.org/abs/2601.22538">https://arxiv.org/abs/2601.22538</a>
   </div>
 </div>
 
