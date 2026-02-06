@@ -19,3 +19,10 @@ title: Blog
 ### My Recent Blogs
 
 - [AR(1) Process and properties](./assets/files/TSA4__Problem_3_2-1.pdf) - A brief overview of the AR(1) process and its key properties.
+
+### Resources
+
+- [An excellent explanation of how the game loop works](https://gameprogrammingpatterns.com/game-loop.html)
+
+### Nostalgia
+- [Turbo](https://en.wikipedia.org/wiki/Turbo_button)
