@@ -20,9 +20,21 @@ title: Blog
 
 - [AR(1) Process and properties](./assets/files/TSA4__Problem_3_2-1.pdf) - A brief overview of the AR(1) process and its key properties.
 
-### Resources
-
+### SWE Resources
 - [An excellent explanation of how the game loop works](https://gameprogrammingpatterns.com/game-loop.html)
+
+### Learning to Defer
+- [Overview of Learning to Defer](https://www.researchgate.net/publication/398417243_Learning_to_Defer_A_Survey)
+
+### Research Resources
+- [NUS SoC Cluster Guide](https://dochub.comp.nus.edu.sg/cf/guides/compute-cluster/slurm-quick)(Need NUS Comp Account)
+
+- [My Cluster Guide]({{ "/other/cluster.md" | relative_url }})
+### New Era
+- [Claude Agent Team](https://www.youtube.com/watch?v=1jlKUxqRQAw)
 
 ### Nostalgia
 - [Turbo](https://en.wikipedia.org/wiki/Turbo_button)
+
+### AI and Us
+- [EU: Ethics guidelines for trustworthy AI](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai)
