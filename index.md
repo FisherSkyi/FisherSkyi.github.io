@@ -22,7 +22,6 @@ title: Home
 
 <ul style="font-family: monospace;">
   <li>Machine Learning</li>
-  <li>Time Series Analysis (I'm working on a project about this recently)</li>
 </ul>
 
 <div class="social-icons">
