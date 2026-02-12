@@ -28,8 +28,8 @@ title: Blog
 
 ### Research Resources
 - [NUS SoC Cluster Guide](https://dochub.comp.nus.edu.sg/cf/guides/compute-cluster/slurm-quick)(Need NUS Comp Account)
-
 - [My Cluster Guide]({{ "/other/cluster.md" | relative_url }})
+
 ### New Era
 - [Claude Agent Team](https://www.youtube.com/watch?v=1jlKUxqRQAw)
 - [On Feb 2026: Will we be the last generation of HUMAN?](https://shumer.dev/something-big-is-happening)
