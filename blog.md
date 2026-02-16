@@ -29,6 +29,7 @@ title: Blog
 ### Research Resources
 - [NUS SoC Cluster Guide](https://dochub.comp.nus.edu.sg/cf/guides/compute-cluster/slurm-quick)(Need NUS Comp Account)
 - [My Cluster Guide]({{ "/other/cluster.md" | relative_url }})
+- [My Note on Torch](https://meta-l2d-letian.notion.site/PyTorch-218437cc017d80b1ababdd30678339d1)
 
 ### New Era
 - [Claude Agent Team](https://www.youtube.com/watch?v=1jlKUxqRQAw)

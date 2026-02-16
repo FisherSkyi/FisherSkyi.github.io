@@ -17,12 +17,8 @@ title: Home
 </p>
 
 <p style="font-family: monospace;">
-  My research interests include:
+  My research interests is in Machine Learning, with a focus on selective prediction (learning-to-defer), human-ai collaboration, decision theory and risk minimization. <br>
 </p>
-
-<ul style="font-family: monospace;">
-  <li>Machine Learning</li>
-</ul>
 
 <div class="social-icons">
   <a href="mailto:yuletian@u.nus.edu"><i class="fas fa-envelope"></i></a>
