@@ -23,6 +23,11 @@ title: Blog
 ### SWE Resources
 - [An excellent explanation of how the game loop works](https://gameprogrammingpatterns.com/game-loop.html)
 
+### AI/ML Resources
+- [Best explanation of back propagation](https://www.youtube.com/watch?v=SmZmBKc7Lrs)
+- [CS189: Intro to ML](https://eecs189.org/sp26/)
+- 
+
 ### Learning to Defer
 - [Overview of Learning to Defer](https://www.researchgate.net/publication/398417243_Learning_to_Defer_A_Survey)
 
@@ -40,3 +45,13 @@ title: Blog
 
 ### AI and Us
 - [EU: Ethics guidelines for trustworthy AI](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai)
+
+### Anthropic
+- [How we communicate: Nonviolent Communication](https://www.clearerthinking.org/post/nonviolent-communication)
+
+### TED Talks
+- [How to build on top of existing system: inspired from marshmellow challenge](https://www.youtube.com/watch?v=H0_yKBitO8M)
+
+## February 2026
+
+
