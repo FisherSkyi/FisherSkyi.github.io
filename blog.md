@@ -53,5 +53,8 @@ title: Blog
 - [How to build on top of existing system: inspired from marshmellow challenge](https://www.youtube.com/watch?v=H0_yKBitO8M)
 
 ## February 2026
+- Mon Feb 23: I find an awesome explanation on [call back](https://stackoverflow.com/questions/9596276/how-to-explain-callbacks-in-plain-english-how-are-they-different-from-calling-o/9652434) and also it's relation to [closure in swift](https://medium.com/@basselshurbaji/swift-an-attempt-to-improve-closure-syntax-8954082b3bb2)
+
+- Tue Feb 24: [Dependency injection](https://gokhana.medium.com/what-is-dependency-injection-di-how-to-apply-it-code-example-e066bbe88a62)
 
 

@@ -5,7 +5,7 @@ title: Projects
 
 <div class="side-by-side right">
   <div class="side-image">
-    <img src="{{ "/assets/images/reposenseOverview.png" | relative_url }}" alt="Road sign example">
+    <img src="{{ "/assets/images/reposenseOverview.png" | relative_url }}" alt="RepoSense example">
   </div>
   <div class="side-text">
     <div class="markdown-body">
@@ -14,6 +14,20 @@ title: Projects
     The project is supervised by Prof. Damith C. Rajapakse<br>
     The project website is <a href="https://reposense.org/">here</a><br>
     The project repo can be found <a href="https://github.com/reposense/RepoSense">Here</a> <br>
+    </div>
+  </div>
+</div>
+
+
+<div class="side-by-side right">
+  <div class="side-image">
+    <img src="{{ "/assets/images/ui1.png" | relative_url }}" alt="Peggle Game Example">
+  </div>
+  <div class="side-text">
+    <div class="markdown-body">
+    <h2>SkyPeggle: A Game with its own Engine</h2>
+    Solo developer for SkyPeggle, a game developed using Swift for iPad. The project was created as part of a university course project for CS3217 Software Engineering on Modern Platform at NUS.<br>
+    The project demo can be found <a href="https://drive.google.com/file/d/1O69BMAY5rIX0vHvJYiK-KcyPy9Ux6z6U/view?usp=sharing">Here</a> <br>
     </div>
   </div>
 </div>
