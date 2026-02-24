@@ -13,7 +13,8 @@ title: Projects
     Developer for RepoSense based on <a href="https://nus-cs3281.github.io/2026/index.html">CS3281</a>, a OSS project of NUS Computing.<br>
     The project is supervised by Prof. Damith C. Rajapakse<br>
     The project website is <a href="https://reposense.org/">here</a><br>
-    The project repo can be found <a href="https://github.com/reposense/RepoSense">Here</a> <br>
+    The project repo can be found <a href="https://github.com/reposense/RepoSense">Here</a> 
+    <br>
     </div>
   </div>
 </div>
@@ -28,6 +29,13 @@ title: Projects
     <h2>SkyPeggle: A Game with its own Engine</h2>
     Solo developer for SkyPeggle, a game developed using Swift for iPad. The project was created as part of a university course project for CS3217 Software Engineering on Modern Platform at NUS.<br>
     The project demo can be found <a href="https://drive.google.com/file/d/1O69BMAY5rIX0vHvJYiK-KcyPy9Ux6z6U/view?usp=sharing">Here</a> <br>
+    This iOS Peggle‑style game mixes a custom physics engine, UIKit views, and level designer tooling; the app routes through a Menu that lets you choose levels, select a master
+    (BB‑8 vs R2‑D2), and launches the GameViewController with that context.<br>
+    <h3>Tech Stack & Skills</h3>
+    <ul>
+      <li>Swift + UIKit: refactored level designer into state+renderer helpers, persistent JSON levels, clean dependency injection</li>
+      <li>Game logic: bespoke PhysicsEngine with circle‑OBB collision, chain reactions, physics callbacks (kaboom animation).</li>
+    </ul>
     </div>
   </div>
 </div>
