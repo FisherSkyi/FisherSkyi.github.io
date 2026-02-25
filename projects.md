@@ -16,7 +16,7 @@ title: Projects
     The project repo can be found <a href="https://github.com/reposense/RepoSense">Here</a><br>
     The main contribution is to implement a new feature that allows users to filter for files using glob patterns across multiple repositories, which is a significant improvement to the user experience. This feature enables users to easily find and analyze specific files across multiple repositories, making it easier to track changes and identify trends in the codebase.<br>
     See the PR for more details: <a href="https://github.com/reposense/RepoSense/pull/2526/changes">Here</a><br>
-    See the demo (deprecated) <a href="https://drive.google.com/file/d/1q3-y0EhZ6zkwlr9Z7KcC7qDSOg7CgAYo/view?usp=sharing">Here</a><br>
+    See the demo <a href="https://drive.google.com/file/d/1X7Y2TKfjTn8dGA7G0OyMhvzcr5Cb6W7u/view?usp=sharing">here</a> and <a href="https://drive.google.com/file/d/1UXzZiRg-2VTqJ_LU5jwFP2UmxVlL_5_y/view?usp=sharing">here</a><br>
     </div>
   </div>
 </div>
