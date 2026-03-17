@@ -57,4 +57,10 @@ title: Blog
 
 - Tue Feb 24: [Dependency injection](https://gokhana.medium.com/what-is-dependency-injection-di-how-to-apply-it-code-example-e066bbe88a62)
 
+## March 2026
+- Wed Mar 10: [window in JS, also touch on compilation and execution of JS](https://medium.com/@Chitturi_Teja/all-about-javascript-window-object-9dbcd24463ad)
+
+- Mon Mar 16: [Swift deinit issue](https://forums.swift.org/t/pointer-being-freed-was-not-allocated-unless-i-have-an-empty-deinit/84034) I hope this will be fixed in the future, but for now, be careful when testing in Swift.
+  
+- Tue Mar 17: [What is Agentic AI Engineering (Meta Staff Engineer Explains)](https://www.youtube.com/watch?v=FqPwHHrN1bg) agentic validation; build cli tool, openclaw; the opportunity is whatever slow down the agents; brown field projects aren't optimized for agents; what are good principles for agentic codebase?
 

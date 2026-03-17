@@ -19,6 +19,8 @@ Year: AY25/26, Semester 2
 <ul>
     <li>Selected as a Teaching Assistant, preparing lab materials (quiz, slides, etc) for upcoming semester.</li>
     <li>Topic covered: Object-Oriented Programming in Java.</li>
-    <li><a href="https://drive.google.com/drive/folders/1CTWtafShCRms0Wjb1zpQcgYKuwnx74SS">Resources</a> (Not public available)</li>
+    <li><a href="https://drive.google.com/drive/folders/1yTeJ_TBDHvSBVR51_gplzL3ONNEVid5N?usp=drive_link">My Slides</a> </li>
+    <li><a href="https://drive.google.com/drive/folders/1Cjb0MZt0Tpw2blfWasoSeU3t3V2paP5c?usp=sharing">My Help Sheet</a> </li>
+    <li><a href="https://drive.google.com/drive/folders/1Cjb0MZt0Tpw2blfWasoSeU3t3V2paP5c?usp=sharing">Vim Shortcuts</a> Thanks Yiqian for preparing them.</li>
 </ul>
 
