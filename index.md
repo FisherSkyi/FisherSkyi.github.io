@@ -12,7 +12,7 @@ title: Home
 <h1>About Me</h1>
 
 <p style="font-family: monospace;">
-  Hi, I'm Letian Yu <br>
+  Hi, I'm Letian Yu 俞乐天<br>
   Sophomore CS student @ NUS <br>
 </p>
 
