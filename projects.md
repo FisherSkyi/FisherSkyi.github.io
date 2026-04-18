@@ -21,6 +21,20 @@ title: Projects
   </div>
 </div>
 
+<div class="side-by-side right">
+  <div class="side-image">
+    <img width="80%" src="{{ "/assets/images/soullessknight.svg" | relative_url }}" alt="STePS Poster">
+  </div>
+  <div class="side-text">
+    <div class="markdown-body">
+    <h2>Soulless Knight: An iOS Dungeon Game</h2>
+    Developer for Soulless Knight. The project is developed as part of a team project for CS3217 Software Engineering on Modern Platform at NUS, and is an iOS game developed using Swift. <br>
+    The project is showed in the NUS STePS Showcase 2026, and win 86 votes from the audience for best project. <br>
+    The game follows Entity-Component-System architecture (ECS). <br>
+    </div>
+  </div>
+</div>
+
 
 <div class="side-by-side right">
   <div class="side-image">
