@@ -23,7 +23,7 @@ title: Projects
 
 <div class="side-by-side right">
   <div class="side-image">
-    <img width="80%" src="{{ "/assets/images/soullessknight.svg" | relative_url }}" alt="STePS Poster">
+    <img width="80%" src="{{ "/assets/images/soullessknightposter.svg" | relative_url }}" alt="STePS Poster">
   </div>
   <div class="side-text">
     <div class="markdown-body">
