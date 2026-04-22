@@ -31,6 +31,9 @@ title: Projects
     Developer for Soulless Knight. The project is developed as part of a team project for CS3217 Software Engineering on Modern Platform at NUS, and is an iOS game developed using Swift. <br>
     The project is showed in the NUS STePS Showcase 2026, and win 86 votes from the audience for best project. <br>
     The game follows Entity-Component-System architecture (ECS). <br>
+    The project website is <a href="https://cs3217-2526.github.io/group-project-dungeonCrawler/">here</a><br>
+    I was mainly in charge of the weapon system and projectile system, which includes implementing various weapons with different behaviors and effects. We adapted a "composition over inheritance" approach to achieve better code maintainability and flexibility. <br>
+    I also designed and implemented the command pattern for handling user inputs and game actions. <br>
     </div>
   </div>
 </div>
