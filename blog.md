@@ -64,3 +64,6 @@ title: Blog
   
 - Tue Mar 17: [What is Agentic AI Engineering (Meta Staff Engineer Explains)](https://www.youtube.com/watch?v=FqPwHHrN1bg) agentic validation; build cli tool, openclaw; the opportunity is whatever slow down the agents; brown field projects aren't optimized for agents; what are good principles for agentic codebase?
 
+## April 2026
+
+- Sun Apr 26: [A collection of different NN and their original paper](https://www.asimovinstitute.org/neural-network-zoo/) would be good if I have time to go through them in the coming vacation.
