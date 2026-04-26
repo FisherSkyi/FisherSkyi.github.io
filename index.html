@@ -1,0 +1,64 @@
+---
+layout: default
+title: Home
+---
+
+<div id="home-app">
+  <section class="fallback-home">
+    <div class="fallback-hero">
+      <div>
+        <p class="section-kicker">Personal Site</p>
+        <h1>Letian Yu 俞乐天</h1>
+        <p class="lead">
+          Computer Science student at NUS working on machine learning research,
+          human-AI collaboration, and reliable decision-making systems.
+        </p>
+        <p>
+          My current interests include learning-to-defer, selective prediction,
+          risk minimization, and open-source engineering.
+        </p>
+      </div>
+      <div class="fallback-portrait">
+        <img src="{{ "/assets/images/portrait.webp" | relative_url }}" alt="Portrait of Letian Yu">
+      </div>
+    </div>
+
+    <section class="section-card" id="languages">
+      <p class="section-kicker">Languages</p>
+      <h2>Working across technical and cultural contexts.</h2>
+      <div class="language-grid">
+        {% for language in site.data.home.languages.items %}
+          <article class="language-item">
+            <h3>{{ language.name }}</h3>
+            <p>{{ language.detail }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="section-card" id="photography">
+      <p class="section-kicker">Photography</p>
+      <h2>Selected visual studies and collection slots.</h2>
+      <div class="photo-grid">
+        {% for item in site.data.home.photography.items %}
+          <article class="photo-card{% unless item.image %} photo-card--placeholder photo-card--{{ item.theme }}{% endunless %}">
+            {% if item.image %}
+              <div class="photo-media">
+                <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}">
+              </div>
+            {% else %}
+              <div class="photo-placeholder">{{ item.meta }}</div>
+            {% endif %}
+            <div class="photo-copy">
+              <p class="card-eyebrow">{{ item.meta }}</p>
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.description }}</p>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  </section>
+</div>
+
+<script id="home-data" type="application/json">{{ site.data.home | jsonify }}</script>

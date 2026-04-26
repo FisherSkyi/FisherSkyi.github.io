@@ -1,6 +1,6 @@
 title: FisherSkyi
 author: "Yu Letian"
-description: CS @ NUS · Research Portfolio
+description: NUS Computer Science student focused on machine learning research, teaching, and open-source work.
 # theme: jekyll-theme-cayman
 baseurl: ""
 url: "https://fisherskyi.github.io"
@@ -14,11 +14,9 @@ nav:
     url: /projects/
   - title: Teaching
     url: /teaching/
+  - title: Talks
+    url: /talks/
   - title: Blog
     url: /blog/
   - title: Honours & Awards
     url: /honor/
-  - title: Talks
-    url: /talks/
-  - title: Languages
-    url: /languages/

@@ -1,5 +1,16 @@
-<nav>
-  {% for item in site.nav %}
-    <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-  {% endfor %}
-</nav>
+<div id="site-nav-root">
+  <nav class="site-nav" aria-label="Primary">
+    <a class="site-brand" href="{{ "/" | relative_url }}">
+      <span class="site-brand-mark">LY</span>
+      <span class="site-brand-text">
+        <strong>{{ site.author }}</strong>
+        <span>Machine Learning · Research · Teaching</span>
+      </span>
+    </a>
+    <div class="site-nav-links">
+      {% for item in site.nav %}
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </div>
+  </nav>
+</div>

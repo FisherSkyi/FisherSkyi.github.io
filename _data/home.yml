@@ -1,0 +1,93 @@
+hero:
+  name: Letian Yu
+  native_name: 俞乐天
+  role: Computer Science student at the National University of Singapore
+  location: Singapore
+  intro: I work on machine learning systems that make human decision-making more reliable, with current interests in learning-to-defer, selective prediction, robustness, and risk-sensitive evaluation.
+  portrait: /assets/images/portrait.webp
+  portrait_alt: Portrait of Letian Yu
+  badges:
+    - CS @ NUS
+    - ML Research
+    - Teaching Assistant
+  metrics:
+    - value: AISTATS 2026
+      label: Accepted paper
+    - value: RepoSense
+      label: Open-source engineering
+    - value: 2x
+      label: Dean's List
+  links:
+    - label: Explore research
+      url: /research/
+      style: primary
+    - label: View projects
+      url: /projects/
+      style: secondary
+    - label: Contact
+      url: mailto:yuletian@u.nus.edu
+      style: text
+  social:
+    - type: email
+      label: Email
+      url: mailto:yuletian@u.nus.edu
+    - type: github
+      label: GitHub
+      url: https://github.com/FisherSkyi
+    - type: linkedin
+      label: LinkedIn
+      url: https://www.linkedin.com/in/letian-yu/
+    - type: scholar
+      label: Google Scholar
+      url: https://scholar.google.com/citations?user=nFFolY0AAAAJ&hl=en
+
+focus:
+  title: Current Focus
+  intro: I care about dependable machine learning systems, strong software foundations, and interfaces that help people make better decisions.
+  items:
+    - title: Research
+      text: Building on learning-to-defer, selective prediction, and robust decision-making with collaborators at NUS and beyond.
+      link_label: See research
+      link_url: /research/
+    - title: Engineering
+      text: Shipping practical software across open-source tooling, course projects, and iOS applications with a bias for clarity and maintainability.
+      link_label: View projects
+      link_url: /projects/
+    - title: Teaching
+      text: Supporting programming education through tutorials, course material preparation, and hands-on mentoring for NUS students.
+      link_label: Teaching experience
+      link_url: /teaching/
+
+languages:
+  title: Languages
+  intro: Languages that support research collaboration, teaching, and cross-cultural communication.
+  items:
+    - name: Chinese 中文
+      detail: Native
+    - name: English
+      detail: Fluent
+    - name: German Deutsch
+      detail: Basic, currently learning
+
+photography:
+  title: Photography
+  intro: Photography is a slower counterweight to technical work. I am building a collection around portraits, light, architecture, and everyday observation.
+  items:
+    - title: Portrait Study
+      meta: Portrait
+      description: A close portrait study focused on expression, contrast, and restrained framing.
+      image: /assets/images/profile.webp
+      alt: Portrait study by Letian Yu
+    - title: Natural Light
+      meta: Portrait
+      description: A softer frame built around ambient light and texture rather than heavy post-processing.
+      image: /assets/images/portrait.webp
+      alt: Portrait in natural light by Letian Yu
+    - title: Campus Geometry
+      meta: Collection slot
+      description: Reserved for a future series on architecture, shadow, and structure around campus.
+      theme: stone
+    - title: Street Notes
+      meta: Collection slot
+      description: Reserved for a future street set focused on movement, routine, and small city details.
+      theme: midnight
