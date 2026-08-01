@@ -1,15 +1,8 @@
-# Jekyll build directory
-_site/**
-
-# Bundler files
-Gemfile
-Gemfile.lock
-vendor/**
-
-# Jekyll cache
-.sass-cache/**
-.jekyll-cache/**
-.jekyll-metadata
+# Node / Vite
+node_modules
+dist
+.vite
+*.local
 
 # System files
 .DS_Store
