@@ -1,9 +1,15 @@
+import { useEffect, useState } from 'react'
 import { DATA } from './data.js'
 
 const ext = (href) => (href && href.startsWith('http') ? { target: '_blank', rel: 'noreferrer' } : {})
 
 function Empty() {
-  return <div className="empty">— nothing matches that filter.</div>
+  return (
+    <div className="empty">
+      nothing matches that filter.
+      <br />
+      你来到了荒原。
+    </div>);
 }
 
 export function About() {
@@ -17,25 +23,6 @@ export function About() {
           </p>
         ))}
       </div>
-
-      <div className="facts">
-        {DATA.facts.map((f) => (
-          <div className="fact" key={f.k}>
-            <div className="fact__k">{f.k}</div>
-            <div className="fact__v">{f.v}</div>
-          </div>
-        ))}
-      </div>
-
-      <div className="now">
-        <div className="now__label">Currently</div>
-        {DATA.now.map((n, i) => (
-          <div className="now__row" key={i}>
-            <span className="now__arrow">→</span>
-            <span className="now__text">{n}</span>
-          </div>
-        ))}
-      </div>
     </div>
   )
 }
@@ -45,7 +32,6 @@ export function Projects({ match }) {
   return (
     <div className="section">
       <div className="section__head">
-        <div className="eyebrow">Projects</div>
         <h1 className="section__title">Things I've shipped</h1>
       </div>
       {items.length === 0 ? (
@@ -89,7 +75,6 @@ export function Writing({ match }) {
   return (
     <div className="section">
       <div className="section__head">
-        <div className="eyebrow">Writing</div>
         <h1 className="section__title">Notes as I figure things out</h1>
       </div>
       {items.length === 0 ? (
@@ -119,7 +104,6 @@ export function Publications({ match }) {
   return (
     <div className="section">
       <div className="section__head">
-        <div className="eyebrow">Publications</div>
         <h1 className="section__title">Papers and preprints</h1>
       </div>
       {items.length === 0 ? (
@@ -153,7 +137,6 @@ export function Talks({ match }) {
   return (
     <div className="section">
       <div className="section__head">
-        <div className="eyebrow">Talks</div>
         <h1 className="section__title">Where I've spoken</h1>
       </div>
       {items.length === 0 ? (
@@ -180,7 +163,6 @@ export function Experience({ match }) {
   return (
     <div className="section">
       <div className="section__head">
-        <div className="eyebrow">Experience</div>
         <h1 className="section__title">Résumé</h1>
       </div>
       {items.length === 0 ? (
@@ -204,20 +186,47 @@ export function Experience({ match }) {
 }
 
 export function Gallery() {
+  const [active, setActive] = useState(null)
   return (
     <div className="section">
       <div className="section__head">
-        <div className="eyebrow">Photography</div>
         <h1 className="section__title">Shot on walks</h1>
       </div>
       <div className="gallery">
-        {[1, 2, 3, 4, 5, 6].map((n) => (
-          <div className="photo photo--empty" key={n}>
-            <span>Drop a photo</span>
-          </div>
+        {DATA.photos.map((photo) => (
+          <button className="photo" key={photo.src} onClick={() => setActive(photo)} aria-label={`Open ${photo.caption}`}>
+            <img src={photo.src} alt={photo.caption} loading="lazy" />
+            <figcaption className="photo__caption">{photo.caption}</figcaption>
+          </button>
         ))}
       </div>
-      <div className="note">— placeholder tiles, swap in your own photos</div>
+      {active && <Lightbox photo={active} onClose={() => setActive(null)} />}
+    </div>
+  )
+}
+
+function Lightbox({ photo, onClose }) {
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape') onClose()
+    }
+    window.addEventListener('keydown', onKey)
+    document.body.style.overflow = 'hidden'
+    return () => {
+      window.removeEventListener('keydown', onKey)
+      document.body.style.overflow = ''
+    }
+  }, [onClose])
+
+  return (
+    <div className="lightbox" role="dialog" aria-modal="true" aria-label={photo.caption} onClick={onClose}>
+      <button className="lightbox__close" onClick={onClose} aria-label="Close">
+        ✕
+      </button>
+      <figure className="lightbox__figure" onClick={(e) => e.stopPropagation()}>
+        <img className="lightbox__img" src={photo.src} alt={photo.caption} />
+        <figcaption className="lightbox__caption">{photo.caption}</figcaption>
+      </figure>
     </div>
   )
 }

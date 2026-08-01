@@ -28,8 +28,9 @@ export const DATA = {
   about: {
     lede: 'Too young too simple, sometimes naïve.',
     paras: [
-      "I'm a third-year Computer Science student at NUS working across systems, interfaces, and applied machine learning. My research is in selective prediction (learning-to-defer), human–AI collaboration, decision theory, and risk minimization — where the hard part isn't the model, it's making the result legible to a person who has to act on it.",
-      "I've shipped features into open-source projects, built games with their own engines, and taught programming to two cohorts of NUS students. I'm always happy to talk about research, teaching, or a good systems problem.",
+      "I'm a third-year Computer Science student at NUS (Singapore)",
+      "I am interested in guitar, café and coding",
+      "I speak Chinese (cannot write traditional Chinese), English and German (beginner level)"
     ],
   },
   facts: [
@@ -45,14 +46,6 @@ export const DATA = {
   ],
   projects: [
     {
-      name: 'RepoSense',
-      year: '2026',
-      blurb:
-        'Contributor to RepoSense (NUS OSS, CS3281). Implemented glob-pattern file filtering across multiple repositories — a significant UX improvement for tracking changes.',
-      stack: ['Java', 'OSS', 'Gradle'],
-      href: 'https://github.com/reposense/RepoSense/pull/2526/changes',
-    },
-    {
       name: 'Soulless Knight',
       year: '2026',
       blurb:
@@ -64,15 +57,23 @@ export const DATA = {
       name: 'SkyPeggle',
       year: '2025',
       blurb:
-        'Solo Peggle-style iPad game with a bespoke physics engine — circle–OBB collision, chain reactions, physics callbacks — plus a level designer and persistent JSON levels.',
+        'Solo Peggle-style iPad game with a bespoke physics engine. OBB collision, chain reactions, physics callbacks plus a level designer and persistent levels.',
       stack: ['Swift', 'UIKit', 'Physics'],
       href: 'https://drive.google.com/file/d/1O69BMAY5rIX0vHvJYiK-KcyPy9Ux6z6U/view?usp=sharing',
+    },
+    {
+      name: 'RepoSense',
+      year: '2026',
+      blurb:
+        'Contributor to RepoSense (NUS OSS, CS3281). Implemented glob-pattern file filtering across multiple repositories.',
+      stack: ['Java', 'OSS', 'Gradle'],
+      href: 'https://github.com/reposense/RepoSense/pull/2526/changes',
     },
     {
       name: 'SoCTAssist',
       year: '2025',
       blurb:
-        'Team tool for CS2103T that helps undergraduate TAs manage tasks — task tracking and scheduling behind a friendly interface.',
+        'Team tool for CS2103T that helps undergraduate TAs manage tasks.',
       stack: ['Java', 'JavaFX'],
       href: 'https://github.com/AY2526S1-CS2103T-W11-1/tp',
     },
@@ -96,7 +97,7 @@ export const DATA = {
     {
       date: '2026-01',
       title: 'Adversarially Robust Learning-to-Defer accepted to AISTATS 2026',
-      sub: 'Our paper on robust L2D for classification and regression was accepted — looking forward to presenting.',
+      sub: 'Our paper on robust L2D for classification and regression was accepted.',
       href: 'https://arxiv.org/abs/2510.10988',
     },
     {
@@ -114,17 +115,16 @@ export const DATA = {
   ],
   pubs: [
     {
-      title: 'L2D in Time Series',
-      authors: 'Yu, L., Montreuil, Y.',
+      title: 'Learning-to-Defer in Non-Stationary Time Series via Switching State-Space Models',
+      authors: 'Montreuil, Y., Yu, L., et al.',
       venue: 'Preprint · arXiv 2601.22538',
       links: [
         { label: 'arXiv', href: 'https://arxiv.org/abs/2601.22538' },
-        { label: 'code', href: 'https://github.com/yannismontreuil/Time_Series_L2D' },
       ],
     },
     {
       title: 'Adversarially Robust Learning-to-Defer for Classification and Regression',
-      authors: 'Montreuil, Y., Yu, L., et al.',
+      authors: 'Yu, L., Montreuil, Y., et al.',
       venue: 'AISTATS 2026 · arXiv 2510.10988',
       links: [{ label: 'arXiv', href: 'https://arxiv.org/abs/2510.10988' }],
     },
@@ -132,7 +132,10 @@ export const DATA = {
       title: 'Road Sign Classification with a Denoising Pipeline Approach',
       authors: 'Yu, L., Sun, Y., Zhang, J., Liu, H., Hu, Z.',
       venue: 'ICoIAS 2025',
-      links: [{ label: 'code', href: 'https://github.com/FisherSkyi/classify_denoise_SwinIR' }],
+      links: [
+        { label: 'paper', href: 'https://ieeexplore.ieee.org/document/11450091' },
+        { label: 'code', href: 'https://github.com/FisherSkyi/classify_denoise_SwinIR' }
+      ],
     },
   ],
   talks: [
@@ -140,28 +143,42 @@ export const DATA = {
   ],
   roles: [
     {
-      when: '2025 — now',
-      role: 'Undergraduate research assistant',
+      when: 'May 2026 - Aug 2026',
+      role: 'Software Engineer Intern',
+      org: 'AICET, NUS',
+      what: 'Built a full-stack applicant tracking system that streamlined recruitment workflows.',
+    },
+    {
+      when: '2025 — 2026',
+      role: 'Undergraduate research',
       org: 'NUS School of Computing',
-      what: 'Learning-to-defer research with Yannis Montreuil (NUS & CNRS): extending the L2D framework to time series and adversarial robustness.',
+      what: 'Fortunated to research learning-to-defer with Yannis (NUS & CNRS).',
     },
     {
       when: 'AY25/26 S2',
       role: 'Teaching assistant · CS2030S Programming Methodology II',
-      org: 'NUS · Object-Oriented Programming in Java',
-      what: 'Preparing lab materials (quizzes, slides, help sheets) and leading sessions for the upcoming semester.',
+      org: 'NUS School of Computing · Object-Oriented Programming in Java',
+      what: 'Grading and giving feedback to student. Running the labs. Student feedback report 4.5/5.0',
     },
     {
       when: 'AY25/26 S1',
       role: 'Teaching assistant · CS1101S Programming Methodology I',
-      org: 'NUS · Functional programming (SICP JS)',
-      what: 'Led weekly tutorials and consultations, using problem sets and live coding to reinforce core concepts.',
+      org: 'NUS School of Computing · Functional programming (SICP)',
+      what: 'Led weekly tutorials and consultations.',
     },
     {
-      when: '2023 — now',
-      role: "B.Comp. Computer Science · Dean's List, Top Student (CS2103T, top 1.6%)",
+      when: '2024 — 2028',
+      role: "B.Comp. Computer Science (Hons)",
       org: 'National University of Singapore',
-      what: "Coursework across systems, software engineering, and machine learning. Dean's List AY24/25 S1 and AY25/26 S1.",
+      what: "Dean's list in AY24/25 S1 and AY25/26 S1. Top student in CS2109S.",
     },
+  ],
+  photos: [
+    { src: '/assets/images/hangzhou.JPG', caption: 'Hangzhou' },
+    { src: '/assets/images/coffee.JPG', caption: 'Coffee' },
+    { src: '/assets/images/guitar-of-Tsien-Hsue-shen.JPG', caption: 'Guitar of Tsien Hsue-shen' },
+    { src: '/assets/images/singapore.JPG', caption: 'Singapore' },
+    { src: '/assets/images/hkust.JPG', caption: 'HKUST' },
+    { src: '/assets/images/utown.JPG', caption: 'UTown, NUS' },
   ],
 }

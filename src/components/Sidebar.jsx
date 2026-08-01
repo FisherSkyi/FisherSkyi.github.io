@@ -82,7 +82,7 @@ export default function Sidebar({ page, setPage, theme, toggleTheme }) {
             {theme === 'dark' ? <Moon size={14} strokeWidth={1.75} /> : <Sun size={14} strokeWidth={1.75} />}
             <span className="theme-toggle__label">{theme === 'dark' ? 'Dark' : 'Light'}</span>
           </span>
-          <span className="theme-toggle__key">T</span>
+          <span className="theme-toggle__key">t</span>
         </button>
       </div>
     </aside>
