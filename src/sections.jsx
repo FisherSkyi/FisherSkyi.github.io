@@ -10,7 +10,6 @@ export function About() {
   return (
     <div className="section section--about">
       <div className="about__lede">
-        <div className="eyebrow">About</div>
         <h1 className="about__h1">{DATA.about.lede}</h1>
         {DATA.about.paras.map((p, i) => (
           <p className="about__p" key={i}>

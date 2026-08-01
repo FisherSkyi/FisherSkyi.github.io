@@ -19,14 +19,14 @@ export const PROFILE = {
   socials: [
     { label: 'GitHub', href: 'https://github.com/FisherSkyi' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/letian-yu/' },
-    { label: 'Scholar', href: 'https://scholar.google.com/citations?user=nFFolY0AAAAJ&hl=en' },
+    { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=nFFolY0AAAAJ&hl=en' },
     { label: 'Email', href: 'mailto:yuletian@u.nus.edu' },
   ],
 }
 
 export const DATA = {
   about: {
-    lede: 'I build software that makes complicated things feel obvious.',
+    lede: 'Too young too simple, sometimes naïve.',
     paras: [
       "I'm a third-year Computer Science student at NUS working across systems, interfaces, and applied machine learning. My research is in selective prediction (learning-to-defer), human–AI collaboration, decision theory, and risk minimization — where the hard part isn't the model, it's making the result legible to a person who has to act on it.",
       "I've shipped features into open-source projects, built games with their own engines, and taught programming to two cohorts of NUS students. I'm always happy to talk about research, teaching, or a good systems problem.",

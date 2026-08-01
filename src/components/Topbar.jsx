@@ -10,7 +10,7 @@ export default function Topbar({ q, setQ, crumb, inputRef, onToggleMenu }) {
         value={q}
         onChange={(e) => setQ(e.target.value)}
         ref={inputRef}
-        placeholder="filter this section — press / to focus"
+        placeholder="filter this section"
         aria-label="Filter section"
       />
       <span className="topbar__crumb">{crumb}</span>

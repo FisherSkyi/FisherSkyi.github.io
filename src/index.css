@@ -185,6 +185,9 @@ a:hover {
   flex-wrap: wrap;
 }
 .socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-family: var(--mono);
   font-size: 11px;
   padding: 5px 9px;
@@ -228,6 +231,26 @@ a:hover {
   font-family: var(--mono);
   font-size: 11px;
   color: var(--accent);
+}
+.theme-toggle__side {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--dim);
+}
+
+/* Lucide icons inherit currentColor and shouldn't shrink in flex rows. */
+.nav__icon {
+  flex: 0 0 auto;
+  color: var(--dim);
+  transition: color 140ms var(--ease);
+}
+.nav__item--active .nav__icon {
+  color: var(--accent);
+}
+.socials a svg,
+.theme-toggle__side svg {
+  flex: 0 0 auto;
 }
 
 .hints {
@@ -302,7 +325,6 @@ a:hover {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--accent);
 }
 .section__head {
