@@ -12,6 +12,7 @@ import {
   Mail,
   SquareCode,
   BriefcaseBusiness,
+  Shapes,
 } from 'lucide-react'
 import { PAGES, PROFILE } from '../data.js'
 
@@ -24,6 +25,7 @@ const NAV_ICONS = {
   talks: Mic,
   work: Briefcase,
   gallery: Camera,
+  misc: Shapes,
 }
 
 // Optional icons for social links (brand marks like GitHub/LinkedIn were

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { PAGES } from './data.js'
 import Sidebar from './components/Sidebar.jsx'
 import Topbar from './components/Topbar.jsx'
-import { About, Projects, Writing, Publications, Talks, Experience, Gallery } from './sections.jsx'
+import { About, Projects, Writing, Publications, Talks, Experience, Gallery, Miscellaneous } from './sections.jsx'
 
 const IDS = PAGES.map((p) => p.id)
 const validPage = (id) => (IDS.includes(id) ? id : 'about')
@@ -105,6 +105,7 @@ export default function App() {
           {page === 'talks' && <Talks match={match} />}
           {page === 'work' && <Experience match={match} />}
           {page === 'gallery' && <Gallery />}
+          {page === 'misc' && <Miscellaneous match={match} />}
         </div>
       </main>
     </div>

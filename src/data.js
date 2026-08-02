@@ -9,6 +9,7 @@ export const PAGES = [
   { id: 'talks', label: 'Talks' },
   { id: 'work', label: 'Experience' },
   { id: 'gallery', label: 'Photography' },
+  { id: 'misc', label: 'Miscellaneous' },
 ]
 
 export const PROFILE = {
@@ -30,7 +31,7 @@ export const DATA = {
     paras: [
       "I'm a third-year Computer Science student at NUS (Singapore)",
       "I am interested in guitar, café and coding",
-      "I speak Chinese (cannot write traditional Chinese), English and German (beginner level)"
+      "I speak Chinese, English and German (beginner level)"
     ],
   },
   facts: [
@@ -172,6 +173,38 @@ export const DATA = {
       org: 'National University of Singapore',
       what: "Dean's list in AY24/25 S1 and AY25/26 S1. Top student in CS2109S.",
     },
+  ],
+  misc: [
+    {
+      title: 'Hacker News',
+      description: 'A social news website focusing on computer science and entrepreneurship.',
+      hostname: 'news.ycombinator.com',
+      href: 'https://news.ycombinator.com/',
+    },
+    {
+      title: 'The Unknown Thing',
+      description: 'My friend\'s blog',
+      hostname: 'theunknownth.ing',
+      href: 'https://theunknownth.ing/',
+    },
+    {
+      title: 'NUS School of Computing',
+      description: 'Where I study Computer Science.',
+      hostname: 'comp.nus.edu.sg',
+      href: 'https://www.comp.nus.edu.sg/',
+    },
+    {
+      title: 'ETH Zürich',
+      description: 'Where I will be on exchange in AY26/27 S2.',
+      hostname: 'inf.ethz.ch',
+      href: 'https://inf.ethz.ch/',
+    },
+    {
+      title: 'VisuAlgo',
+      description: 'A visualisation tool for algorithms and data structures.',
+      hostname: 'visualgo.net',
+      href: 'https://visualgo.net/en',
+    }
   ],
   photos: [
     { src: '/assets/images/hangzhou.JPG', caption: 'Hangzhou' },

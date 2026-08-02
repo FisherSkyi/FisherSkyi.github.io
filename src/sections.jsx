@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { ExternalLink } from 'lucide-react'
 import { DATA } from './data.js'
 
 const ext = (href) => (href && href.startsWith('http') ? { target: '_blank', rel: 'noreferrer' } : {})
@@ -227,6 +228,37 @@ function Lightbox({ photo, onClose }) {
         <img className="lightbox__img" src={photo.src} alt={photo.caption} />
         <figcaption className="lightbox__caption">{photo.caption}</figcaption>
       </figure>
+    </div>
+  )
+}
+
+export function Miscellaneous({ match }) {
+  const links = DATA.misc.filter((link) => match(link.title, link.description, link.hostname))
+
+  return (
+    <div className="section">
+      <div className="section__head">
+        <h1 className="section__title">Things worth keeping</h1>
+        <p className="section__intro">A small collection of links I return to.</p>
+      </div>
+      {links.length === 0 ? (
+        <Empty />
+      ) : (
+        <div className="misc-links">
+          {links.map((link) => (
+            <a className="misc-link" key={link.href} href={link.href} {...ext(link.href)}>
+              <span className="misc-link__body">
+                <span className="misc-link__title">{link.title}</span>
+                <span className="misc-link__description">{link.description}</span>
+              </span>
+              <span className="misc-link__meta">
+                <span>{link.hostname}</span>
+                <ExternalLink size={15} strokeWidth={1.75} aria-hidden="true" />
+              </span>
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
