@@ -177,6 +177,15 @@ export function Experience({ match }) {
                 <div className="role__title">{r.role}</div>
                 <div className="role__org">{r.org}</div>
                 <div className="role__what">{r.what}</div>
+                {r.links && r.links.length > 0 && (
+                  <div className="pub__links">
+                    {r.links.map((l) => (
+                      <a key={l.label} href={l.href} {...ext(l.href)}>
+                        {l.label} ↗
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           ))}

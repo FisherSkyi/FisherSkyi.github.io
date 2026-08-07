@@ -148,6 +148,7 @@ export const DATA = {
       role: 'Software Engineer Intern',
       org: 'AICET, NUS',
       what: 'Built a full-stack applicant tracking system that streamlined recruitment workflows.',
+      links: [{ label: 'report', href: 'https://dl.comp.nus.edu.sg/handle/1900.100/21242' }],
     },
     {
       when: '2025 — 2026',
@@ -185,7 +186,7 @@ export const DATA = {
       title: 'The Unknown Thing',
       description: 'My friend\'s blog',
       hostname: 'theunknownth.ing',
-      href: 'https://theunknownth.ing/',
+      href: 'https://hanning.dev/',
     },
     {
       title: 'NUS School of Computing',
