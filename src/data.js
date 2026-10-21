@@ -27,7 +27,7 @@ export const PROFILE = {
 
 export const DATA = {
   about: {
-    lede: 'Too young too simple, sometimes naïve.',
+    lede: "I'm still young, still simple, and sometimes naïve.",
     paras: [
       "I'm a third-year Computer Science student at NUS (Singapore)",
       "I am interested in guitar, café and coding",
@@ -144,6 +144,12 @@ export const DATA = {
   ],
   roles: [
     {
+      when: 'AY26/27 S1',
+      role: 'Teaching assistant · CS2103T Software Engineering',
+      org: 'NUS School of Computing · Object-Oriented Programming in Java',
+      what: 'Running weekly tutorials and consultations.',
+    },
+    {
       when: 'May 2026 - Aug 2026',
       role: 'Software Engineer Intern',
       org: 'AICET, NUS',
@@ -172,7 +178,7 @@ export const DATA = {
       when: '2024 — 2028',
       role: "B.Comp. Computer Science (Hons)",
       org: 'National University of Singapore',
-      what: "Dean's list in AY24/25 S1 and AY25/26 S1. Top student in CS2109S.",
+      what: "Dean's list in AY24/25 S1 and AY25/26 S1. Top student in CS2109S and CS2103T.",
     },
   ],
   misc: [
