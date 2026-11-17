@@ -71,8 +71,30 @@ export function Projects({ match }) {
   )
 }
 
-export function Writing({ match }) {
-  const items = DATA.posts.filter((p) => match(p.title, p.sub, p.date))
+const monthOf = (d) => (/^\d{4}-\d{2}$/.test(d) ? d + '-01' : d)
+
+export function Writing({ match, posts }) {
+  const items = [
+    ...posts.map((p) => ({
+      dateKey: p.dateKey,
+      title: p.title,
+      sub: p.summary,
+      href: '#/post/' + p.slug,
+      search: [p.title, p.summary, p.tags.join(' ')].join(' '),
+      ext: false,
+    })),
+    ...DATA.posts.map((p) => ({
+      dateKey: monthOf(p.date),
+      title: p.title,
+      sub: p.sub,
+      href: p.href,
+      search: [p.title, p.sub, p.date].join(' '),
+      ext: true,
+    })),
+  ]
+    .sort((a, b) => b.dateKey.localeCompare(a.dateKey))
+    .filter((p) => match(p.search))
+
   return (
     <div className="section">
       <div className="section__head">
@@ -83,15 +105,14 @@ export function Writing({ match }) {
       ) : (
         <div className="rows">
           {items.map((p, i) => {
-            const Tag = p.href ? 'a' : 'div'
             return (
-              <Tag className={'row' + (p.href ? ' row--link' : '')} key={i} href={p.href} {...ext(p.href)}>
-                <div className="row__date">{p.date}</div>
+              <a className={'row' + (p.href ? ' row--link' : '')} key={i} href={p.href} {...(p.ext ? ext(p.href) : {})}>
+                <div className="row__date">{p.dateKey.slice(0, 7)}</div>
                 <div className="row__body">
                   <div className="row__title">{p.title}</div>
                   <div className="row__sub">{p.sub}</div>
                 </div>
-              </Tag>
+              </a>
             )
           })}
         </div>
