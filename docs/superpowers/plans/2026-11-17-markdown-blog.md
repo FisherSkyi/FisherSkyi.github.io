@@ -185,6 +185,8 @@ test('firstParagraph', () => {
 Run: `npm test`
 Expected: FAIL — `Cannot find module '../scripts/posts/parse.mjs'`.
 
+Note: use plain `node --test` (Node 24's test runner discovers `tests/*.test.mjs` automatically); `node --test tests/` does not resolve the directory on Node 24, so the `test` script in `package.json` is `node --test`.
+
 - [ ] **Step 3: Implement the parser**
 
 Create `scripts/posts/parse.mjs`:
@@ -247,8 +249,9 @@ export function normalizeDate(raw, slug) {
 // First markdown paragraph, whitespace-collapsed. '' when none.
 export function firstParagraph(markdown) {
   const tree = unified().use(remarkParse).parse(markdown || '')
+  const textOf = (node) => (node.children || []).map((c) => (c.value !== undefined ? c.value : '')).join('')
   const walk = (node) => {
-    if (node.type === 'paragraph') return String(node.value || '')
+    if (node.type === 'paragraph') return textOf(node)
     for (const child of node.children || []) {
       const r = walk(child)
       if (r) return r
