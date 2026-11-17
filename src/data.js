@@ -107,12 +107,6 @@ export const DATA = {
       sub: 'Now available on arXiv.',
       href: 'https://arxiv.org/abs/2510.10988',
     },
-    {
-      date: '2025-09',
-      title: 'AR(1) process and its properties',
-      sub: 'A brief note on the AR(1) process and its key properties.',
-      href: '/assets/files/TSA4__Problem_3_2-1.pdf',
-    },
   ],
   pubs: [
     {

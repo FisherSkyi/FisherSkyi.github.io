@@ -1,19 +1,33 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { PAGES } from './data.js'
+import posts from 'virtual:posts'
 import Sidebar from './components/Sidebar.jsx'
 import Topbar from './components/Topbar.jsx'
+import Article from './components/Article.jsx'
 import { About, Projects, Writing, Publications, Talks, Experience, Gallery, Miscellaneous } from './sections.jsx'
 
 const IDS = PAGES.map((p) => p.id)
 const validPage = (id) => (IDS.includes(id) ? id : 'about')
-const pageFromHash = () => validPage(window.location.hash.replace(/^#\/?/, ''))
+
+// The hash is the single source of truth for routing:
+//   #/post/<slug> → Writing section with that post open
+//   #/<page-id>   → one of the eight pages
+const parseHash = () => {
+  const h = window.location.hash.replace(/^#\/?/, '')
+  if (h.startsWith('post/')) {
+    return { page: 'writing', postSlug: h.slice(5) || null }
+  }
+  return { page: validPage(h), postSlug: null }
+}
 
 export default function App() {
-  const [page, setPageState] = useState(pageFromHash)
+  const [route, setRoute] = useState(parseHash)
   const [theme, setTheme] = useState('dark')
   const [q, setQ] = useState('')
   const [menuOpen, setMenuOpen] = useState(false)
   const inputRef = useRef(null)
+
+  const page = route.page
 
   // Restore saved theme.
   useEffect(() => {
@@ -28,7 +42,7 @@ export default function App() {
 
   const setPage = useCallback((id) => {
     const next = validPage(id)
-    setPageState(next)
+    setRoute({ page: next, postSlug: null })
     setQ('')
     setMenuOpen(false)
     if (window.location.hash.replace(/^#\/?/, '') !== next) {
@@ -36,10 +50,11 @@ export default function App() {
     }
   }, [])
 
-  // Sync when the user navigates via back/forward or edits the hash.
+  // Sync when the user navigates via back/forward or edits the hash
+  // (including #/post/<slug> links from the Writing list).
   useEffect(() => {
     const onHash = () => {
-      setPageState(pageFromHash())
+      setRoute(parseHash())
       setQ('')
     }
     window.addEventListener('hashchange', onHash)
@@ -55,6 +70,7 @@ export default function App() {
   }, [])
 
   // Keyboard shortcuts: j/k move sections, / focuses filter, t toggles theme.
+  // While an article is open, `page` is 'writing', so j/k move sections.
   useEffect(() => {
     const onKey = (e) => {
       const el = e.target
@@ -89,6 +105,7 @@ export default function App() {
     return (...parts) => !needle || parts.join(' ').toLowerCase().includes(needle)
   }, [q])
 
+  const post = route.postSlug ? posts.find((p) => p.slug === route.postSlug) : null
   const crumb = (PAGES.find((p) => p.id === page) || PAGES[0]).label
 
   return (
@@ -100,7 +117,12 @@ export default function App() {
         <div className="content">
           {page === 'about' && <About />}
           {page === 'projects' && <Projects match={match} />}
-          {page === 'writing' && <Writing match={match} />}
+          {page === 'writing' &&
+            (post ? (
+              <Article post={post} />
+            ) : (
+              <Writing match={match} posts={posts} />
+            ))}
           {page === 'pubs' && <Publications match={match} />}
           {page === 'talks' && <Talks match={match} />}
           {page === 'work' && <Experience match={match} />}
