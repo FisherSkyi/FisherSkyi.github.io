@@ -45,7 +45,7 @@ public/posts/
 ```yaml
 ---
 title: AR(1) process and its properties
-date: 2026-02-14            # required, YYYY-MM or YYYY-MM-DD
+date: "2026-02-14"          # required, YYYY-MM or YYYY-MM-DD — QUOTE it
 tags: [statistics, time-series]
 summary: A brief note on... # optional; falls back to first paragraph
 draft: false                # optional; default false
@@ -53,6 +53,9 @@ draft: false                # optional; default false
 ```
 
 - `title` and `date` are required.
+- **Quote the date** (`"2026-02-14"`) so YAML keeps it a string. Unquoted
+  dates are also tolerated (YAML parses them to `Date`; the parser formats
+  them back via UTC getters), but the quoted form is the documented one.
 - `date` may omit the day (`YYYY-MM`); treat as the first of the month for
   sorting/display.
 - `tags` is an optional list (used for the row UI and the search filter).
@@ -77,11 +80,12 @@ draft: false                # optional; default false
 ### 3.1 Files
 
 - `scripts/posts/parse.mjs` — pure function `{ raw, slug, kind } → post object`.
-  Parses frontmatter, renders markdown → HTML, rewrites relative asset URLs.
-  Pure (no I/O) so it is unit-testable.
-- `scripts/posts/rewriteAssets.mjs` — pure helper used by `parse.mjs`:
-  rewrites `src=`/`href=` in an HTML string for relative URLs.
+  Parses frontmatter, renders markdown → HTML, rewrites relative asset URLs
+  (the rewrite helper, `rewriteAssetUrls`, lives in this same file — it is
+  ~10 lines). Pure (no I/O) so it is unit-testable.
 - `scripts/posts-plugin.mjs` — the Vite plugin.
+- `scripts/posts-preview.mjs` — dev helper that prints the compiled module
+  (`node scripts/posts-preview.mjs`) for debugging without a browser.
 - `tests/posts.test.mjs` — unit tests via `node:test`.
 - `vite.config.js` — registers the plugin.
 
@@ -107,7 +111,9 @@ import posts from 'virtual:posts'
 
 Runtime/build:
 - `gray-matter` — YAML frontmatter.
-- `unified`, `remark-parse`, `remark-gfm`, `rehype-stringify` — md → HTML.
+- `unified`, `remark-parse`, `remark-gfm`, `remark-rehype`, `rehype-stringify`
+  — md → HTML (`remark-rehype` bridges the remark AST to the rehype AST and is
+  required for the rehype plugins to run).
 - `rehype-highlight` — code-block highlighting (one CSS theme valid in both themes).
 - **Recommended, include now:** `remark-math` + `rehype-katex` — the writing is
   statistics-heavy, so `$…$`/`$$…$$` support is one line of config.
