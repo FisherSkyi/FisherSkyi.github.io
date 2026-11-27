@@ -10,3 +10,8 @@ dist
 .AppleDouble
 .LSOverride
 Thumbs.db
+
+# Private / local-only (not for the public repo)
+note.md
+.claude/
+docs/superpowers/
