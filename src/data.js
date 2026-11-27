@@ -13,7 +13,7 @@ export const PAGES = [
 ]
 
 export const PROFILE = {
-  name: 'Lester, Yu Letian',
+  name: 'Sebastian, Yu Letian',
   nameZh: '',
   tagline: 'National University of Singapore',
   prompt: '~/letian',
@@ -27,11 +27,12 @@ export const PROFILE = {
 
 export const DATA = {
   about: {
-    lede: "I'm still young, still simple, and sometimes naïve.",
+    lede: "Hi, I'm Letian",
     paras: [
       "I'm a third-year Computer Science student at NUS (Singapore)",
-      "I am interested in guitar, café and coding",
-      "I speak Chinese, English and German (beginner level)"
+      "I am interested in guitar, coffee and aviation",
+      "I speak Chinese, English and German (beginner level)",
+      "My research interests are in machine learning and robotics"
     ],
   },
   facts: [
@@ -46,6 +47,13 @@ export const DATA = {
     'Selected by NUS for an exchange programme to ETH Zürich.',
   ],
   projects: [
+    {
+      name: 'Koditsu',
+      year: '2026',
+      blurb:
+        'Full-stack Applicant Tracking System that streamlines recruitment workflows with configurable hiring pipelines, candidate tracking, application management, automated invitations, and recruiter-facing dashboards.',
+      stack: ['TS', 'Full-stack', 'NestJS', 'MongoDB', 'ReactJS', 'ATS', 'AWS'],
+    },
     {
       name: 'Soulless Knight',
       year: '2026',
@@ -94,20 +102,7 @@ export const DATA = {
       href: 'https://fisherskyi.github.io/ip/',
     },
   ],
-  posts: [
-    {
-      date: '2026-01',
-      title: 'Adversarially Robust Learning-to-Defer accepted to AISTATS 2026',
-      sub: 'Our paper on robust L2D for classification and regression was accepted.',
-      href: 'https://arxiv.org/abs/2510.10988',
-    },
-    {
-      date: '2025-10',
-      title: 'Preprint: Adversarial robustness in one-stage learning-to-defer',
-      sub: 'Now available on arXiv.',
-      href: 'https://arxiv.org/abs/2510.10988',
-    },
-  ],
+  posts: [],
   pubs: [
     {
       title: 'Learning-to-Defer in Non-Stationary Time Series via Switching State-Space Models',
