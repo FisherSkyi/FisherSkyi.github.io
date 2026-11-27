@@ -21,6 +21,24 @@ const exists = async (p) => {
 export function postsPlugin() {
   return {
     name: 'fisherskyi-posts',
+    // New/removed post FOLDERS are picked up here rather than via
+    // addWatchFile(POSTS_DIR): Vite resolves a virtual module's watched
+    // paths as imports, and a directory does not resolve — which fails
+    // the whole dev server. Watching existing FILES (below) is fine.
+    configureServer(server) {
+      server.watcher.add(POSTS_DIR)
+      const inPostsDir = (f) => f === POSTS_DIR || f.startsWith(POSTS_DIR + path.sep)
+      const refresh = (f) => {
+        if (!inPostsDir(f)) return
+        const mod = server.moduleGraph.getModuleById(RESOLVED_ID)
+        if (!mod) return
+        server.moduleGraph.invalidateModule(mod)
+        server.ws.send({ type: 'full-reload' })
+      }
+      for (const evt of ['add', 'unlink', 'addDir', 'unlinkDir']) {
+        server.watcher.on(evt, refresh)
+      }
+    },
     resolveId(id) {
       if (id === VIRTUAL_ID) return RESOLVED_ID
       return null
@@ -34,8 +52,6 @@ export function postsPlugin() {
       } catch {
         entries = [] // public/posts/ does not exist yet
       }
-      // Watch the dir itself too, so NEW post folders appear without a restart.
-      this.addWatchFile(POSTS_DIR)
       // Only TOP-LEVEL folders are posts (spec §9).
       const slugs = entries.filter((e) => e.isDirectory()).map((e) => e.name).sort()
 
